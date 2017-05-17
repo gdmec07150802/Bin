@@ -83,7 +83,7 @@ public class MineFragment extends BaseFragment implements View.OnClickListener{
         profile_image = (CircleImageView) mContentView.findViewById(R.id.profile_image);
         profile_image.setOnClickListener(this);
         //默认是不可点击的/不可输入
-        setEnabled(false);
+       setEnabled(false);
         //设置具体的值
         MyUser userInfo = BmobUser.getCurrentUser(MyUser.class);
         L.d("用户名:"+userInfo.getUsername());
@@ -96,7 +96,7 @@ public class MineFragment extends BaseFragment implements View.OnClickListener{
         dialog = new CustomDialog(getActivity(), 0, 0,
                 R.layout.dialog_photo, R.style.pop_anim_style, Gravity.BOTTOM, 0);
         //提示框以外点击无效
-        dialog.setCancelable(false);
+        dialog.setCancelable(true);
         btn_camera = (Button) dialog.findViewById(R.id.btn_camera);
         btn_camera.setOnClickListener(this);
         btn_picture = (Button) dialog.findViewById(R.id.btn_picture);

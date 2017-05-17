@@ -59,4 +59,5 @@ dependencies {
     compile files('libs/Msc.jar')
     compile files('libs/photoview-library-1.2.2.jar')
     compile files('libs/Sunflower.jar')
+    compile files('libs/BaiduLBS_Android.jar')
 }
